@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Title tag -->
-  <title>Learn SEO Basics - COMP6103</title>
+  <!-- Title tag -->
+  <title>COMP6103</title>
+  <!-- Meta Description -->
   <meta name="description" content="A basic SEO front page created for COMP6103 using essential HTML tags for search engine optimization.">
+  <!-- Robot meta tag -->
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.example.com/seo-basics" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.yourwebsite.com/portfolio.html" />
+  <!-- hreflang -->
   <link rel="alternate" href="https://www.example.com/seo-basics" hreflang="en" />
 
   <style>
@@ -35,39 +39,78 @@
       font-weight: bold;
     }
 
-
     nav a:hover {
       text-decoration: underline;
     }
+
     .container {
       padding: 40px;
     }
-    h1 {
+
+    h1{
+      font-weight: bold;
       color: #0059b3;
     }
+
     img {
       max-width: 300px;
       height: auto;
       margin: 20px 0;
     }
+
     p {
       font-size: 16px;
       line-height: 1.6;
     }
+
+    .portfolio {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .project-title {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #333;
+    }
+    .project-desc {
+      font-size: 14px;
+      margin-top: 5px;
+      color: #666;
+    }
+
   </style>
 
 </head>
 
 <body>
 
-    <!-- header tag -->
+  <!-- header tag -->
   <nav>
     <ul class="navlist">
         <li class="navItem">
             <a href="#">Home</a>
         </li>
         <li class="navItem">
-            <a href="#">About SEO</a>
+            <a href="#">About Me</a>
         </li>
         <li class="navItem">
             <a href="#">Contact</a>
@@ -78,14 +121,31 @@
   <div class="container">
     <h1>My Portfolio</h1>
 
-    <p>This is a <b>bold</b> word, and this is a <strong>strong</strong> emphasis for SEO.</p>
+    <div style="text-align: center; margin-bottom: 40px;">
+      <img src="https://via.placeholder.com/150" alt="Profile Picture" style="border-radius: 50%; width: 150px; height: 150px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+      <h2 style="margin-top: 20px; color: #0059b3;">Hi, I'm [Your Name]</h2>
+      <p style="font-size: 16px; color: #555;">I'm a passionate web developer and designer who loves building clean, SEO-friendly websites.</p>
+    </div>
 
-    <img src="https://via.placeholder.com/300x200.png?text=SEO+Image" alt="SEO Concept Illustration">
-
-    <p>Learn more about SEO on <a href="https://www.semrush.com/blog/html-tags-for-seo/">Semrush Blog</a>.</p>
-
-    <p>Check out this tool: <a href="https://www.randomseotool.com" rel="nofollow">Random SEO Tool</a></p>
+    <div class="portfolio">
+      <div class="project">
+        <img src="https://via.placeholder.com/280x150.png?text=Project+1" alt="Project 1">
+        <div class="project-title">Project One</div>
+        <div class="project-desc">A website for learning basic HTML and CSS.</div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/280x150.png?text=Project+2" alt="Project 2">
+        <div class="project-title">Project Two</div>
+        <div class="project-desc">An online store built using JavaScript and Bootstrap.</div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/280x150.png?text=Project+3" alt="Project 3">
+        <div class="project-title">Project Three</div>
+        <div class="project-desc">A portfolio site made using modern web design.</div>
+      </div>
+    </div>
   </div>
 
 </body>
 </html>
+
